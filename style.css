@@ -1,0 +1,263 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: gray;
+}
+
+.page {
+  display: flex;
+  flex-direction:  column;
+  width: 45rem;
+  margin: auto;
+  
+  background-color: #FFFFFF;
+
+}
+
+nav {
+  display: flex;
+  background-color: hsla(216, 100%, 46%, 0.94);
+  color: #FFFFFF;
+}
+
+.nav-img img {
+  display: flex;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin: 5px 20px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; 
+  gap: 2rem;
+  margin: auto auto auto 2rem;
+
+}
+
+ul li {
+  align-content: center;
+  align-items: center;
+}
+
+.head-banner {
+  height: 20rem;
+  position: relative;
+  margin: 0 auto;
+
+}
+
+.gallery-wrapper {
+  overflow-x: auto;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.gallery-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery {
+  display: flex;
+  flex-flow: nowrap;
+  gap: 1.5rem
+}
+
+.gallery img {
+  width: 100%;
+  height: 20rem;
+}
+
+.arrow-left, .arrow-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: auto;
+
+  width: 2.5rem;
+
+  font-size: 2rem;
+  line-height: 20rem;
+
+  text-align: center;
+
+  color: #FFFFFF;
+  
+  cursor: pointer;
+
+  border: none;
+
+  background: linear-gradient(to left, transparent 0%, black 200%);
+
+  opacity: 0.3;
+
+  transition: all 400ms ease-in-out;
+}
+
+.arrow-right {
+  position: absolute;
+
+  left: auto;
+  right: 0;
+
+  background: linear-gradient(to right, transparent 0%, black 200%);
+
+}
+
+.arrow-left:hover, 
+.arrow-right:hover {
+  opacity: 1;
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+
+  flex-shrink: 0;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.categories h2 {
+  margin-top: 3rem;
+}
+
+.cards {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cards-categories {
+  display: flex;
+  flex-direction: column;
+
+  width: 12rem;
+  height: 12rem;
+
+  border: 0;
+  border-radius: 2rem;
+
+  background-color: grey;
+}
+
+.cards-categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-categories button {
+  background-color: hsla(0, 0%, 100%, 0);
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 2px;
+
+  border-radius: 5px;
+}
+
+.cards-categories a {
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+}
+
+.cards-categories button:hover {
+  background-color: hsla(0, 0%, 100%, 0.5);
+}
+
+.card-01 {
+  background-image: url("./images/provolone-normal.jpg");
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+  width: 12rem;
+}
+
+.card-02 {
+  background-image: url("./images/nozinho-defumado.jpg");
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+  width: 12rem;
+}
+
+.card-03 {
+  background-image: url("./images/goiabada-normal.jpg");
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+  width: 12rem;
+}
+
+.line {
+  height: 0;
+  width: 40rem;
+
+  border: 1px solid #D9D9D9;
+
+  padding: 0 2.5rem;
+
+  margin: 2rem auto 0;
+}
+
+.about {
+  margin: 2rem auto 0;
+  padding: 0 2.5rem;
+}
+
+.about-info {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.about-info > p {
+  width: 75%;
+}
+
+.about-info > img {
+  width: 25%;
+  border: none;
+
+  border-radius: 10px;
+}
+
+footer {
+  margin-top: 2rem;
+  padding: 0 2.5rem;
+}
+
+footer ul li {
+  display: flex;
+  align-items: center;
+}
+
+footer ul li a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+}
+
+footer ul li {
+  gap: 5px;
+}
