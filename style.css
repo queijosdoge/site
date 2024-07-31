@@ -17,6 +17,7 @@ body {
   display: flex;
   flex-direction:  column;
   max-width: 40rem;
+  height: 100vh;
   margin: auto;
   
   background-color: #FFFFFF;
@@ -131,6 +132,7 @@ main {
   overflow-y: scroll;
 }
 
+
 .categories {
   display: flex;
   flex-direction: column;
@@ -160,11 +162,6 @@ main {
   border-radius: 2rem;
 
   background-color: grey;
-}
-
-
-.cards-categories button {
-
 }
 
 .cards-categories a {
@@ -291,15 +288,17 @@ main {
   height: 25rem;
 }
 
-footer {
+.footer {
+  display: flex;
   height: 50px;
   background: #F9A632;
   color: #FFFFFF;
   text-align: center;
   align-items: center;
+  margin-top: 1em;
 }
 
-footer p {
+.footer p {
   margin: 12.5px auto;
 }
 
