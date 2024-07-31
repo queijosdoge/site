@@ -1,0 +1,398 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: gray;
+}
+
+.page {
+  display: flex;
+  flex-direction:  column;
+  max-width: 40rem;
+  margin: auto;
+  
+  background-color: #FFFFFF;
+
+}
+
+nav {
+  display: flex;
+  background-color: rgb(0, 90, 224);
+  color: #FFFFFF;
+}
+
+.nav-img img {
+  display: flex;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin: 5px 20px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; 
+  gap: 2rem;
+  margin: auto auto auto 2rem;
+
+}
+
+ul li {
+  align-content: center;
+  align-items: center;
+}
+
+.head-banner {
+  max-height: 20rem;
+  position: relative;
+  margin: 0 auto;
+
+}
+
+.gallery-wrapper {
+  overflow-x: auto;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.gallery-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery {
+  display: flex;
+  flex-flow: nowrap;
+  gap: 1.5rem
+}
+
+.gallery img {
+  width: 100%;
+  max-height: 20rem;
+}
+
+.arrow-left, .arrow-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: auto;
+  width: 2.5rem;
+  font-size: 2rem;
+  line-height: 20rem;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to left, transparent 0%, black 200%);
+  opacity: 0.3;
+  transition: all 400ms ease-in-out;
+}
+
+.arrow-right {
+  position: absolute;
+
+  left: auto;
+  right: 0;
+
+  background: linear-gradient(to right, transparent 0%, black 200%);
+
+}
+
+.arrow-left:hover, 
+.arrow-right:hover {
+  opacity: 1;
+}
+
+.item {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+
+  flex-shrink: 0;
+}
+
+main {
+  overflow-y: scroll;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.categories h2 {
+  margin-top: 3rem;
+}
+
+.cards {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cards-categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 10rem;
+  height: 10rem;
+
+  border: 0;
+  border-radius: 2rem;
+
+  background-color: grey;
+}
+
+
+.cards-categories button {
+
+}
+
+.cards-categories a {
+  text-decoration: none;
+  cursor: pointer;
+
+  background-color: #F9A632;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.cards-categories button:hover, .cards-categories a:hover {
+  background-color: hsla(216, 100%, 46%, 0.94);
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.card-01 {
+  background-image: url("./images/ai-generated-8215781_640.jpg");
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+  width: 10rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card-02 {
+  background-image: url("./images/stilton-blue-cheese-3491_640.jpg");
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+  width: 10rem;
+}
+
+.card-03 {
+  background-image: url("./images/goiabada-normal.jpg");
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+  width: 10rem;
+}
+
+.line {
+  height: 0;
+  width: 35rem;
+
+  border: 1px solid #D9D9D9;
+
+  padding: 0 2.5rem;
+
+  margin: 3rem auto 0;
+}
+
+.about {
+  margin: 2rem auto 0;
+  padding: 0 2.5rem;
+}
+
+.about-info {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.about-info > p {
+  width: 75%;
+}
+
+.about-info > img {
+  width: 25%;
+  border: none;
+
+  border-radius: 10px;
+}
+
+.contato {
+  margin-top: 2rem;
+  padding: 0 2.5rem;
+}
+
+.contato ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+
+  margin-top: 5px;
+}
+
+.contato ul li {
+  display: flex;
+  align-items: center;
+}
+
+.contato ul li a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+}
+
+.contato ul li {
+  gap: 5px;
+}
+
+#whatsapp-logo {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+#instagram-logo {
+  width: 3rem;
+  height: 3rem;
+}
+
+.location {
+  margin: 2rem 0;
+}
+
+.map-location {
+  width: 35rem;
+  height: 25rem;
+}
+
+footer {
+  height: 50px;
+  background: #F9A632;
+  color: #FFFFFF;
+  text-align: center;
+  align-items: center;
+}
+
+footer p {
+  margin: 12.5px auto;
+}
+
+@media (min-width: 1120px) {
+  .page {
+    max-width: 100rem;
+  }
+
+  nav ul {
+    margin: 0 auto;
+  }
+
+  .head-banner {
+    max-height: 40rem;
+  }
+  .gallery img {
+    max-height: 30rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  .cards {
+    gap: 5rem;
+  }
+
+  .cards-categories {
+    width: 25rem;
+    height: 30rem;
+  }
+
+  .line {
+    width: 90rem;
+  }
+
+  .cards-categories button {
+    padding: 1.5rem;
+    font-size: 2rem; 
+  }
+
+  .cards-categories a {
+    padding: 1rem;
+    margin: auto;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    background: #F9A632;
+    font-size: 1.8rem;
+  }
+
+  .about {
+    padding: 0 7rem;
+  }
+
+  .about p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .contato {
+    padding: 0 7rem;
+  }
+
+  .items-contato {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 1rem;
+  }
+
+  .contato-infos {
+    font-size: 2rem;
+    line-height: 4rem;
+    align-content: center;
+  }
+
+  .contatos-infos ul li {
+    text-align: center;
+  }
+
+  #whatsapp-logo {
+    width: 35px;
+    height: 35px;
+  }
+
+  #instagram-logo {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .contato-links {
+    display: flex; 
+    flex-direction: row; 
+    gap: 4rem;
+  }
+
+}
