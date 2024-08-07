@@ -453,7 +453,7 @@ footer a {
         max-width: 40rem;
     }
     .navbar-menu {
-        max-width: 40rem;
+        min-width: 40rem;
     }
 }
 @media (min-width: 99431px) {
