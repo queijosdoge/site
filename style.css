@@ -58,6 +58,8 @@ nav {
     display: flex;
     min-width: 42rem;
 
+    margin: 0;
+
     justify-content: space-between;
 
     position: fixed;
@@ -453,7 +455,8 @@ footer a {
         max-width: 40rem;
     }
     .navbar-menu {
-        min-width: 40rem;
+        max-width: 40rem;
+        margin: 0;
     }
 }
 
