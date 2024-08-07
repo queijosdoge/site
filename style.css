@@ -32,8 +32,7 @@ body {
 
 .page {
     margin: 0 auto;
-    max-width: 42rem;
-    min-width: 40rem;
+    min-width: 42rem;
     background-color: #FFFFFF;
 }
 
