@@ -57,7 +57,7 @@ nav {
 .navbar-menu {
     display: flex;
     min-width: 42rem;
-    
+
     justify-content: space-between;
 
     position: fixed;
@@ -383,7 +383,7 @@ footer h3 {
     text-align: center;
     justify-content: center;
     padding: 3rem 0 0;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 footer a {
@@ -456,6 +456,7 @@ footer a {
         min-width: 40rem;
     }
 }
+
 @media (min-width: 99431px) {
     .mobile-icon-menu {
         display: none;
