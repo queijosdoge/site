@@ -57,7 +57,9 @@ nav {
 
 .navbar-menu {
     display: flex;
-    width: 42rem;
+    max-width: 42rem;
+    min-width: 40rem;
+    
     justify-content: space-between;
 
     position: fixed;
