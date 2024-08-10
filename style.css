@@ -466,6 +466,13 @@ footer a {
     vertical-align: top;
 }
 
+.whats {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+
 @media (max-width: 400px) {
     .page {
         max-width: 38rem;
@@ -524,6 +531,13 @@ footer a {
 }
 
 @media (min-width: 1100px) {
+    .navbar-menu {
+        height: 60px;
+    }
+    .logo-header {
+        display: none;
+    }
+
     .mobile-icon-menu {
         display: none;
     }
@@ -563,10 +577,12 @@ footer a {
         padding: 0 10rem;
     }
     .infos-prod p {
-        padding-left: 5rem;
+        padding-left: 15rem;
+        padding-right: 15rem;
     }
     .prod-img-banner {
         width: 40rem;
+        margin-left: 7rem;
     }
 
     .infos-prod-button {
