@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+    
+    <link rel="shortcut icon" type="imagex/png" href="./images/cheese.svg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Queijos do Gê</title>
+</head>
+
+<body>
+
+    <div class="page">
+
+        <header>
+            <nav>
+                <div class="navbar-menu">
+                    <div class="logo-header">
+                        <a class="nav-link" href="#top"><img src="./images/logo-queijos-do-ge-60.png" alt="Logo da empresa"></a>
+                    </div>
+
+                    <div class="mobile-icon-menu">
+                        <div class="icon-menu">
+                            <button onclick="menuShow()"><img class="icon" src="./images/menu_white_36dp.svg" alt=""></button>
+                        </div>
+                    </div>
+
+                    <div class="desk-menu">
+                        <ul>
+                            <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./catalogo.html">Catálogo</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#historia">Quem somos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#social">Redes Sociais</a></li>
+
+                        </ul>
+                        
+                    </div>
+                </div>
+            </nav>
+
+            <div class="mobile-menu">
+                <div class="mobile-icon-menu">
+                    <div class="icon-menu-close">
+                        <button onclick="menuShow()"><img class="icon-close" src="./images/close_white_36dp-white.svg" alt=""></button>
+                    </div>
+                </div>
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="#top">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./catalogo.html">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#historia">Quem somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#social">Redes Sociais</a></li>
+                </ul>
+                
+            </div>
+
+            <div class="fecha-menu" onclick="fechaMenu()"></div>
+
+        </header>
+
+        <main>
+            <section class="informacoes-01">
+                <div class="teste-shade">
+
+                    <div class="logo-main animate__animated animate__fadeInLeft">
+                        <img class="logo-img" src="./images/logo-queijos-do-ge-250.png" alt="Logo Queijos do Ge">
+                    </div>
+                    
+                    <div class="infos-main animate__animated animate__fadeInRight">
+                        <h1>QUEIJOS DO GÊ</h1>
+                        
+                        <p>
+                            Produção de queijos diversos, elaborados com <br> muito amor e 
+                            carinho, sendo produtos caseiros e <br>artesanais com tradição de 
+                            mais de 50 anos. 
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="informacoes-prod" id="produtos">
+                <div class="infos-prod">
+                    <h2>Nossos sabores</h2>
+                    <div class="infos-prod-hero">
+
+                        <p>
+                            O Queijos do Gê é responsável por produzir o delicioso queijo minas Frescal, 
+                            queijo Meia-Cura, Provolone defumado, Muçarela, Palito, Nózinho, entre outros.
+                            E conta também com queijos renomados, como o famoso Queijo da Canastra, 
+                            queijo Gorgonzola, Parmesão, Gouda, entre diversas variedades.
+                        </p>
+                        <div class="prod-img-banner">
+                            <img id="img-banner-produtos" src="./images/produtos.jpg" alt="Produtos do Queijos do Ge">
+                        </div>
+                    </div>
+                        
+                    <div class="infos-prod-button">
+                        <a href="./catalogo.html"><button type="button">Ver Nosso Catálogo</button> </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="informacoes-historia" id="historia">
+                <div class="infos-historia">
+                    <h2>
+                        Nossa tradição
+                    </h2>
+                    <p>
+                        Queijos do Gê está em atividade desde de 2016, quando assumi a produção de queijos dos meus sogros Sr. Luis e Dona Geny, que já produziam queijos há cerca de 25 anos. <br>
+                        Hoje posso afirmar com segurança que tive os melhores orientadores, onde consegui melhorar a produção de queijos diversos, elaborados com muito amor, carinho e tradição, sendo todos os produtos caseiros e artesanais com mais de 50 anos de história. <br>
+                        Tudo sempre muito fresquinho, se você ainda não provou, venha nos fazer uma visita na nossa queijaria em Mococa/SP.
+                    </p>
+                </div>
+            </section>
+
+            <section class="pedidos" id="contato">
+                <div class="infos-pedidos">
+                    <h2>
+                        Faça seu pedido...
+                    </h2>
+                    <p>
+                        Hoje recebemos e processamos seu pedido, com muito carinho, através do nosso whatsapp. <br>
+                        Para realizar o pedido, clique no botão abaixo.
+                    </p>
+
+                    <div class="infos-pedidos-button">
+                        <a href="https://wa.me/5519994920820?text=Olá,%20estou%20entrando%20em%20contato%20através%20do%20seu%20site!" target="_blank"><button>Peça já</button></a>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="localizacao">
+                <div class="infos-localizacao">
+                    <h2>
+                        ...e venha nos conhecer
+                    </h2>
+                    <p>
+                        Hoje nossa loja está localizada na rua <br> 
+                        <span>Prudente de Moraes, 104 - Centro. Mococa-SP</span>                        
+                    </p>
+
+                    <div class="infos-localizacao-items">
+
+                        <a href="https://maps.app.goo.gl/M9Fg1QYs8oAyhg3n8" target="_blank"><span>Clique aqui </span> &nbsp;para traçar a sua rota até nós!</a>
+                        
+                        <div class="location-maps">
+                            <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d928.2457102631803!2d-47.00655767153091!3d-21.469189898763176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b7b845ca59c91d%3A0x49ae99d35e4cf771!2sR.%20Prudente%20de%20Moraes%2C%20104%20-%20Centro%2C%20Mococa%20-%20SP%2C%2013730-400!5e0!3m2!1spt-BR!2sbr!4v1717449514212!5m2!1spt-BR!2sbr"
+                            class="map-location" style="border:0; width: 330px;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <h3>Nossas redes sociais</h3>
+            <section class="infos-social-midia">
+                <div class="btn-whats">
+                    <a href="https://wa.me/5519994920820?text=Olá,%20estou%20entrando%20em%20contato%20através%20do%20seu%20site!" target="_blank">
+                        <button>
+                            <img src="./images/whats.svg" alt="Icone do whatsapp"> Whatsapp
+                        </button>
+                    </a>
+                </div> 
+                <div class="btn-insta">
+                    <a href="https://www.instagram.com/queijosdoge" target="_blank">
+                        <button>
+                            <img src="./images/instagram.svg" alt="Icone do Instagram"> Instagram
+                        </button>
+                    </a>
+                </div>
+                <div class="btn-face">
+                    <a href="https://www.facebook.com/queijosduge" target="_blank">
+                        <button>
+                            <img src="./images/facebook.svg" alt="Icone do Facebook"> Facebook
+                        </button>
+                    </a>
+                </div>
+            </section>
+            <div class="infos-footer" id="social">
+                <p>Produção de queijos caseiros, artesanais e diversos. <br>Mais de 50 anos de tradição. <br><br></p>
+                <p>
+                    <a href="https://maps.app.goo.gl/M9Fg1QYs8oAyhg3n8">Rua Prudente de Moraes, 104 - Centro - Mococa(SP)</a><br>
+                    <a href="https://wa.me/5519994920820?text=Olá,%20estou%20entrando%20em%20contato%20através%20do%20seu%20site!" target="_blank">Tel: (19) 99492-0820</a>
+                </p>
+            </div>
+
+            <div class="footer-copyright">
+                <p><span>©</span> Queijos do Gê | Criado por Marcelo Mello.</p>
+            </div>
+        </footer>
+
+        <div class="whats">
+            <a href="https://wa.me/5519994920820?text=Olá,%20estou%20entrando%20em%20contato%20através%20do%20seu%20site!" target="_blank">
+              <img src="./images/whats-logo.png" width="65px" alt="Fale comigo pelo WhatsApp" title="Fale comigo pelo WhatsApp">
+            </a>
+        </div>
+
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
