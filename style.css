@@ -51,7 +51,7 @@ nav {
 
     width: 100%;
     height: 8rem;
-    background-color: var(--color-amarelo);
+    background-color: rgba(1, 1, 1, 0.707);
     
     font-family: "Yanone Kaffeesatz", sans-serif;
     font-size: 2rem;
@@ -68,9 +68,9 @@ nav {
 
     position: fixed;
     top: 0;
-    z-index: 999;
+    z-index: 9;
 
-    background-color: var(--color-amarelo);
+    background-color: rgba(254, 167, 46, 0.75);
 
 }
 
@@ -169,7 +169,7 @@ nav {
 }
 
 .informacoes-01 {
-    background-image: url(images/bg-banner.jpg);
+    background-image: url(images/bg-mobile-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -482,7 +482,7 @@ footer a {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 5;
+    z-index: 85;
   }
 
 .animate__animated.animate__fadeIn {
@@ -516,11 +516,18 @@ footer a {
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .mobile-menu{
         min-width: 35rem;
     }
     .informacoes-01 {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin: 0 auto;
+        background-image: url(images/bg-banner.jpg);
+    }
+    .teste-shade {
         display: flex;
         width: 100%;
         align-items: center;
@@ -599,6 +606,7 @@ footer a {
 
     .informacoes-01 {
         padding: 0;
+        background-image: url(images/bg-banner.jpg);
     }
     .teste-shade {
         display: flex;
